@@ -68,3 +68,18 @@ footer {
   background-color: #fce4ec;
   color: #444;
 }
+section {
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+section h2 {
+  color: #4b0082;
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}

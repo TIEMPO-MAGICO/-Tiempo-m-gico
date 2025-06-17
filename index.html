@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tiempo Mágico</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('section');
+      secciones.forEach(seccion => {
+        seccion.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+
+    window.onload = () => {
+      mostrarSeccion('bienvenida');
+    }
+  </script>
+</head>
+<body>
+  <img src="ninos.jpg" alt="Niños usando dispositivos" class="imagen-top">
+
+  <header>
+    <h1 class="titulo">Tiempo Mágico</h1>
+    <h2>Uso excesivo de dispositivos móviles en niños de 3 a 5 años</h2>
+  </header>
+
+  <nav class="botonera">
+    <button onclick="mostrarSeccion('bienvenida')">Bienvenida</button>
+    <button onclick="mostrarSeccion('problema')">¿Por qué es un problema?</button>
+    <button onclick="mostrarSeccion('consejos')">Consejos para el hogar</button>
+    <button onclick="mostrarSeccion('recomendaciones')">Recomendaciones</button>
+    <button onclick="mostrarSeccion('reflexion')">Reflexión final</button>
+  </nav>
+
+  <section id="bienvenida">
+    <h3>Bienvenida</h3>
+    <p>Estimados padres de familia, les damos la más cordial bienvenida a esta charla titulada <strong>“Tiempo Mágico”</strong>. Nos alegra contar con su presencia y compromiso en el desarrollo saludable de sus hijos. Hoy hablaremos sobre un tema muy importante: el uso excesivo de los dispositivos móviles en niños de 3 a 5 años, una realidad que afecta directamente su bienestar físico, emocional y social.</p>
+    <p>Juntos, reflexionaremos sobre cómo acompañarlos de forma responsable en esta era digital, promoviendo experiencias de crianza más sanas, cercanas y afectivas.</p>
+  </section>
+
+  <section id="problema">
+    <h3>¿Por qué es un problema?</h3>
+    <p>El uso excesivo de celulares, tablets o televisores en niños pequeños puede generar diversas consecuencias negativas en su desarrollo integral. A esta edad, el cerebro está en una etapa clave para formar habilidades cognitivas, sociales, emocionales y motoras.</p>
+    <ul>
+      <li><strong>Retraso en el lenguaje:</strong> Menos interacción con adultos y otros niños reduce la estimulación verbal y limita el vocabulario.</li>
+      <li><strong>Problemas de atención:</strong> El contenido rápido y cambiante de los dispositivos puede dificultar la concentración en actividades escolares o familiares.</li>
+      <li><strong>Alteraciones del sueño:</strong> La luz de las pantallas y el uso nocturno afectan el descanso, generando irritabilidad y bajo rendimiento.</li>
+      <li><strong>Débil desarrollo emocional:</strong> El exceso de pantallas sustituye el juego simbólico y el vínculo afectivo con los padres.</li>
+      <li><strong>Menor actividad física:</strong> Pasar mucho tiempo sentados con el celular limita el movimiento necesario para fortalecer músculos y coordinación.</li>
+    </ul>
+    <p>Por ello, es fundamental que el uso de pantallas sea muy limitado y que se prioricen actividades que promuevan la creatividad, el juego libre, la comunicación y el contacto humano.</p>
+  </section>
+
+  <section id="consejos">
+    <h3>Consejos para el hogar</h3>
+    <ul>
+      <li><strong>Establece límites claros:</strong> No más de 1 hora diaria de pantalla en niños pequeños, según la OMS.</li>
+      <li><strong>Prioriza el juego activo:</strong> Juegos de construcción, cuentos, pintura y actividades al aire libre estimulan mucho más que una pantalla.</li>
+      <li><strong>Momentos libres de tecnología:</strong> Evita celulares durante las comidas, antes de dormir o en reuniones familiares.</li>
+      <li><strong>Habla y juega con ellos:</strong> Conversar, cantar, inventar historias y jugar juntos fortalece el vínculo y el lenguaje.</li>
+      <li><strong>Modela con tu ejemplo:</strong> Si tú también reduces el uso del celular, ellos lo notan y lo imitan.</li>
+      <li><strong>Supervisa siempre el contenido:</strong> Si ven algo, que sea adecuado a su edad, lento, educativo y sin publicidad.</li>
+    </ul>
+    <p>Estos pequeños cambios en la rutina diaria pueden tener un gran impacto en la salud y felicidad de tu hijo o hija.</p>
+  </section>
+
+  <section id="recomendaciones">
+    <h3>Recomendaciones de expertos</h3>
+    <p>Organizaciones como la <strong>OMS (Organización Mundial de la Salud)</strong> y <strong>UNICEF</strong> recomiendan limitar el tiempo frente a pantallas en la primera infancia para proteger el desarrollo integral.</p>
+    <ul>
+      <li><a href="https://www.who.int/es/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more" target="_blank">🔗 OMS: Niños deben jugar más y sentarse menos</a></li>
+      <li><a href="https://www.unicef.org/lac/historias/ninos-pantallas-y-pandemia" target="_blank">🔗 UNICEF: Pantallas y niñez en tiempos de pandemia</a></li>
+      <li><a href="https://www.aepap.org/grupos/grupo-de-patologia-social/uso-de-pantallas-en-ninos-y-adolescentes" target="_blank">🔗 Asociación Española de Pediatría: Uso responsable de pantallas</a></li>
+    </ul>
+    <p>Como docentes y familia, es nuestro deber acompañar y orientar el desarrollo digital de nuestros niños, sin descuidar su necesidad de juego libre, afecto, movimiento y descanso.</p>
+  </section>
+
+  <section id="reflexion">
+    <h3>Reflexión final</h3>
+    <p>Queridas familias, hoy más que nunca necesitamos estar presentes. En un mundo donde las pantallas parecen ocupar cada rincón, nuestros hijos nos necesitan más que nunca: para jugar, para hablar, para aprender a sentir y amar.</p>
+    <p>El “tiempo mágico” no está en una app ni en un video, sino en los momentos que compartimos con ellos: un cuento antes de dormir, una canción inventada, un abrazo sin prisa. Esos instantes son los que construyen una infancia feliz y segura.</p>
+    <p>Gracias por su atención y por dar ese primer paso hacia una crianza más consciente y conectada emocionalmente. 💖</p>
+  </section>
+
+  <section style="text-align: center;">
+    <a href="mailto:gina.ruiz@ucvvirtual.edu.pe">
+      <button class="contacto">Escríbenos</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>Creado por: Gina Ruiz, Liseth Farro y Verónica Julón – Profesoras de Educación Inicial</p>
+    <p>Contacto: gina.ruiz@ucvvirtual.edu.pe</p>
+  </footer>
+</body>
+</html>
